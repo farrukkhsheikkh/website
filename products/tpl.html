@@ -1,0 +1,220 @@
+<div class="form-row">
+            <table cellpadding="2" cellspacing="0" width="100%" id="copysign" ng-if="columnselect == 'one'" ng-if="checked" class="one-column" >
+            <tr>
+              <td><div class="personalname"> <span ng-if="image.position == 'imagetop'" style="margin-bottom:15px; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}" style="max-width:80px" class="imagesrc" /></span>
+                  <h3 class="heavytext" style="margin:0;padding-bottom: 5px;  font-size: {{namefont}}px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;"><span  data-ng-show="firstName">{{firstName}}</span> <span data-ng-show="lastName">{{lastName}}</span></h3>
+                </div></td>
+            </tr>
+            <tr>
+              <td><div class="companydetail">
+                  <div class="title"  style="font-family: Arial, Helvetica, sans-serif;">
+                    <div class="normaltext"><span data-ng-show="title" style="font-size:{{titlefont}}px">{{title}}</span> <span data-ng-show="department" style="border-left:1px solid #000000; padding-left:5px;font-size:{{titlefont}}px" class="bordertext">{{department}}</span></div>
+                  </div>
+                  <div class="personalcontact">
+                    <div class="email"  style="font-family: Arial, Helvetica, sans-serif;">
+                      <div><span data-ng-show="email"  class="heavytext" style="font-size:{{contactfont}}px"><em style="font-style:normal">E: </em> <a href="{{email}}" ng-href="mailto:{{email}}"   class="linktext">{{email}}</a></span> <span data-ng-show="phone" style="border-left:1px solid #000000; padding-left:5px;font-size:{{contactfont}}px" class="bordertext"><em style="font-style:normal" class="heavytext">P: </em> <span class="normaltext">{{phone}}</span></span></div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr>
+              <td><hr style="margin:0px" class="bordertext"></td>
+            </tr>
+            <tr>
+              <td><div class="companyname" style="font-family: Arial, Helvetica, sans-serif;">
+                  <div > <span ng-if="image.position == 'imagebefore'" style="margin:5px 0; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}" class="imagesrc"  style="max-width:80px" /></span> <span  data-ng-show="company" class="heavytext" style="font-size:{{companyfont}}px"><b>{{company}}</b></span></div>
+                </div></td>
+            </tr>
+            <tr>
+              <td><div class="companycontact" style="font-family: Arial, Helvetica, sans-serif;">
+                  <div class="phonemail">
+                    <div style="font-size:{{contactfont}}px"><span data-ng-show="companyphone"><em style=" font-style:normal" class="heavytext">P:</em> <span  class="normaltext">{{companyphone}}</span></span> <span data-ng-show="companyfax" class="bordertext" style="border-left:1px solid #000000; padding-left:5px;"><em style=" font-style:normal" class="heavytext">F:</em> <span  class="normaltext">{{companyfax}}</span></span></div>
+                  </div>
+                  <div class="companyweb">
+                    <div style="font-size:{{contactfont}}px"><span data-ng-show="companyemail"><em style=" font-style:normal" class="heavytext">E:</em> <a href="{{companyemail}}" ng-href="mailto:{{companyemail}}"  class="linktext">{{companyemail}}</a></span> <span   data-ng-show="companyweb"><em style=" font-style:normal" class="heavytext">W:</em> <a href="//{{companyweb}}" ng-href="//{{companyweb}}" class="linktext">{{companyweb}}</a></span></div>
+                  </div>
+                  <div class="address">
+                    <div><span class="normaltext" style="font-size:{{addressfont}}px">{{address}}</span></div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr  ng-if="image.position == 'imagebottom'">
+              <td><span style="margin:5px 0; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}"  class="imagesrc"  style="max-width:80px"  /></span></td>
+            </tr>
+            <tr>
+              <td><div class="socialmedia">
+                  <div class="facebook">
+                    <div><a href="{{facebook}}" ng-href="{{facebook}}" data-ng-show="facebook"><img ng-src="img/facebook-sq.png"></a> <a href="{{twitter}}" ng-href="{{twitter}}" data-ng-show="twitter"><img ng-src="img/twitter-sq.png"></a> <a href="{{linkedin}}" ng-href="{{linkedin}}" data-ng-show="linkedin"><img ng-src="img/linkedin-sq.png"></a> <a href="{{googleplus}}" ng-href="{{googleplus}}" data-ng-show="googleplus"><img ng-src="img/googleplus-sq.png"></a></div>
+                  </div>
+                </div></td>
+            </tr>
+            </table>
+            <table cellpadding="2" cellspacing="0" width="100%" id="copysign" ng-if="columnselect == 'two'" ng-if="checked" class="two-column" >
+            <tr>
+              <td style="border-right:3px solid #666666; padding-right:0px;" class="bordertext" align="center"  ng-if="image.position == 'imagetop'" ><table cellpadding="0" cellspacing="0" width="5%"  >
+                  <tr>
+                    <td align="center"><span style="margin-bottom:15px; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}"  class="imagesrc"  style="max-width:80px" /></span></td>
+                  </tr>
+                </table>
+              <td style="padding-left:10px;"><table cellpadding="0" cellspacing="0" width="95%" >
+                  <tr>
+                    <td><div class="personalname">
+                        <h3 class="heavytext" style="margin:0;padding-bottom: 5px;  font-size: {{namefont}}px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;"><span  data-ng-show="firstName">{{firstName}}</span> <span data-ng-show="lastName">{{lastName}}</span></h3>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="companydetail" style="font-family: Arial, Helvetica, sans-serif;">
+                        <div class="title">
+                          <div class="normaltext" ><span data-ng-show="title" style="font-size:{{titlefont}}px">{{title}}</span> <span data-ng-show="department" style="border-left:1px solid #000000; padding-left:5px; font-size:{{titlefont}}px" class="bordertext">{{department}}</span></div>
+                        </div>
+                        <div class="personalcontact">
+                          <div class="email">
+                            <div style="font-size:{{contactfont}}px"><span data-ng-show="email"  class="heavytext"><em style="font-style:normal">E: </em> <a href="{{email}}" ng-href="mailto:{{email}}"   class="linktext">{{email}}</a></span> <span data-ng-show="phone" style="border-left:1px solid #000000; padding-left:5px;" class="bordertext"><em style="font-style:normal" class="heavytext">P: </em> <span class="normaltext">{{phone}}</span></span></div>
+                          </div>
+                        </div>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="companyname" style="font-family: Arial, Helvetica, sans-serif;">
+                        <div ><span  data-ng-show="company" class="heavytext" style="font-size:{{companyfont}}px"><b>{{company}}</b></span></div>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="companycontact" style="font-family: Arial, Helvetica, sans-serif;">
+                        <div class="phonemail">
+                            <div style="font-size:{{contactfont}}px"><span data-ng-show="companyphone"><em style=" font-style:normal" class="heavytext">P:</em> <span  class="normaltext">{{companyphone}}</span></span> <span data-ng-show="companyfax" class="bordertext" style="border-left:1px solid #000000; padding-left:5px;"><em style=" font-style:normal" class="heavytext">F:</em> <span  class="normaltext">{{companyfax}}</span></span></div>
+                          </div>
+                        <div class="companyweb">
+                            <div style="font-size:{{contactfont}}px"><span data-ng-show="companyemail"><em style=" font-style:normal" class="heavytext">E:</em> <a href="{{companyemail}}" ng-href="mailto:{{companyemail}}"  class="linktext">{{companyemail}}</a></span> <span   data-ng-show="companyweb"><em style=" font-style:normal" class="heavytext">W:</em> <a href="//{{companyweb}}" ng-href="//{{companyweb}}" class="linktext">{{companyweb}}</a></span></div>
+                          </div>
+                        <div class="address">
+                          <div><span class="normaltext" style="font-size:{{addressfont}}px">{{address}}</span></div>
+                        </div>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="socialmedia">
+                        <div class="facebook">
+                          <div><a href="{{facebook}}" ng-href="{{facebook}}" data-ng-show="facebook"><img ng-src="img/facebook-sq.png"></a> <a href="{{twitter}}" ng-href="{{twitter}}" data-ng-show="twitter"><img ng-src="img/twitter-sq.png"></a> <a href="{{linkedin}}" ng-href="{{linkedin}}" data-ng-show="linkedin"><img ng-src="img/linkedin-sq.png"></a> <a href="{{googleplus}}" ng-href="{{googleplus}}" data-ng-show="googleplus"><img ng-src="img/googleplus-sq.png"></a></div>
+                        </div>
+                      </div></td>
+                  </tr>
+                </table></td>
+            </tr>
+            </table>
+            <table cellpadding="2" cellspacing="0" width="100%" id="copysign" ng-if="columnselect == 'compact'" ng-if="checked" class="compact" >
+            <tr>
+              <td  ng-if="image.position == 'imagetop'"  width="80px" style="max-width:80px;width:80px; text-align:center"><table cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td><span style="margin:5px 0; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}"  class="imagesrc"  style="max-width:80px"  /></span></td>
+                  </tr>
+                </table></td>
+              <td width="300px" style="max-width:300px"><table cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td><div class="personalname">
+                        <h3 class="heavytext" style="margin:0;padding-bottom: 5px;  font-size: {{namefont}}px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;"><span  data-ng-show="firstName">{{firstName}}</span> <span data-ng-show="lastName">{{lastName}}</span></h3>
+                      </div></td>
+                  </tr>
+                  <tr>
+                      <td><div class="companyname" style="font-family: Arial, Helvetica, sans-serif;">
+                          <div > <span  data-ng-show="company" class="heavytext" style="font-size:{{companyfont}}px">{{company}}</span></div>
+                        </div></td>
+                    </tr>
+                     <tr>
+                    <td><div class="companydetail" style="font-family: Arial, Helvetica, sans-serif;">
+                        <div class="title">
+                          <div class="normaltext"><span data-ng-show="title" style="font-size:{{titlefont}}px">{{title}}</span> <span data-ng-show="department" style="border-left:1px solid #000000; padding-left:5px; font-size:{{titlefont}}px" class="bordertext">{{department}}</span></div>
+                        </div>
+                        <div class="personalcontact">
+                          <div class="email">
+                            <div><span data-ng-show="email"  class="heavytext" style="font-size:{{contactfont}}px"><em style="font-style:normal">E: </em> <a href="{{email}}" ng-href="mailto:{{email}}"   class="linktext">{{email}}</a></span> <span data-ng-show="phone" style="border-left:1px solid #000000; padding-left:5px;font-size:{{contactfont}}px" class="bordertext"><em style="font-style:normal" class="heavytext">P: </em> <span class="normaltext">{{phone}}</span></span></div>
+                          </div>
+                        </div>
+                      </div></td>
+                  </tr>
+                 
+                  <tr>
+                    <td><div class="socialmedia">
+                        <div class="facebook-social">
+                          <div><a href="{{facebook}}" ng-href="{{facebook}}" data-ng-show="facebook"><img ng-src="img/facebook-sq.png"></a> <a href="{{twitter}}" ng-href="{{twitter}}" data-ng-show="twitter"><img ng-src="img/twitter-sq.png"></a> <a href="{{linkedin}}" ng-href="{{linkedin}}" data-ng-show="linkedin"><img ng-src="img/linkedin-sq.png"></a> <a href="{{googleplus}}" ng-href="{{googleplus}}" data-ng-show="googleplus"><img ng-src="img/googleplus-sq.png"></a></div>
+                        </div>
+                      </div></td>
+                  </tr>
+                </table></td>
+            </tr>
+            </table>
+
+<div class="custom-column one-column"  id="copysign" ng-if="columnselect == 'custom'" ng-if="checked" >
+    <ul class="sortable" >
+<li>
+  <div class="personalname"> <span ng-if="image.position == 'imagetop'" style="margin-bottom:15px; display:block"><img src="img/profile.jpg" ng-src="{{imagelogo}}" style="max-width:80px" class="imagesrc" /></span>
+    </div></li>
+<li>  
+    <div class="personalname"> <h3 class="heavytext" style="margin:0;padding-bottom: 5px;  font-size: {{namefont}}px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;"><span  data-ng-show="firstName">{{firstName}}</span> <span data-ng-show="lastName">{{lastName}}</span></h3>
+</div></li>
+<li><div class="companydetail">
+    <div class="title"  style="font-family: Arial, Helvetica, sans-serif;">
+      <div class="normaltext" ><span data-ng-show="title" style="font-size:{{titlefont}}px">{{title}}</span> <span data-ng-show="department" style="border-left:1px solid #000000; padding-left:5px;font-size:{{titlefont}}px" class="bordertext">{{department}}</span></div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="personalcontact">
+      <div class="email"  style="font-family: Arial, Helvetica, sans-serif;">
+        <div><span data-ng-show="email"  class="heavytext" style="font-size:{{contactfont}}px"><em style="font-style:normal">E: </em> <a href="{{email}}" ng-href="mailto:{{email}}"   class="linktext">{{email}}</a></span> <span data-ng-show="phone" style="border-left:1px solid #000000; padding-left:5px; font-size:{{contactfont}}px" class="bordertext"><em style="font-style:normal" class="heavytext">P: </em> <span class="normaltext">{{phone}}</span></span></div>
+      </div>
+    </div>
+</li>
+
+  <li><hr style="margin:0px" class="bordertext"></li>
+<li><div class="companyname" style="font-family: Arial, Helvetica, sans-serif;">
+    <div><span  data-ng-show="company" class="heavytext" style="font-size:{{companyfont}}px"><b>{{company}}</b></span></div>
+  </div></li>
+<li>
+    <div class="companycontact" style="font-family: Arial, Helvetica, sans-serif;">
+        <div class="phonemail">
+            <div style="font-size:{{contactfont}}px"><span data-ng-show="companyphone"><em style=" font-style:normal" class="heavytext">P:</em> <span  class="normaltext">{{companyphone}}</span></span> <span data-ng-show="companyfax" class="bordertext" style="border-left:1px solid #000000; padding-left:5px;"><em style=" font-style:normal" class="heavytext">F:</em> <span  class="normaltext">{{companyfax}}</span></span></div>
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="companyweb">
+              <div style="font-size:{{contactfont}}px"><span data-ng-show="companyemail"><em style=" font-style:normal" class="heavytext">E:</em> <a href="{{companyemail}}" ng-href="mailto:{{companyemail}}"  class="linktext">{{companyemail}}</a></span> <span   data-ng-show="companyweb"><em style=" font-style:normal" class="heavytext">W:</em> <a href="//{{companyweb}}" ng-href="//{{companyweb}}" class="linktext">{{companyweb}}</a></span></div>
+            </div>
+       </li>
+       <li>
+         <div class="address">
+          <div><span class="normaltext" style="font-size:{{addressfont}}px">{{address}}</span></div>
+        </div>
+</li>
+<li>
+    <div class="socialmedia">
+        <div class="facebook">
+          <div><a href="{{facebook}}" ng-href="{{facebook}}" data-ng-show="facebook"><img ng-src="img/facebook-sq.png"></a> <a href="{{twitter}}" ng-href="{{twitter}}" data-ng-show="twitter"><img ng-src="img/twitter-sq.png"></a> <a href="{{linkedin}}" ng-href="{{linkedin}}" data-ng-show="linkedin"><img ng-src="img/linkedin-sq.png"></a> <a href="{{googleplus}}" ng-href="{{googleplus}}" data-ng-show="googleplus"><img ng-src="img/googleplus-sq.png"></a></div>
+        </div>
+      </div>
+</li>
+
+
+
+
+
+    </ul>
+    </div>
+
+
+            <table cellpadding="0" cellspacing="0" width="100%" id="copybtntable">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+            </table>
+          </div>

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html style="-webkit-overflow-scrolling: touch;">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="icon" type="image/png" sizes="32x32" href="elsa.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="elsa.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="elsa.png">
+        <link href="lib/fidget.css" media="all" rel="stylesheet" />
+    <title>Fidget Spinner v1.0 - Most relaxing unharm fidget spinner in your palm! Have fun cheers.</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7813774828248719"
+    crossorigin="anonymous"></script></head>
+<body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69527731-1"></script>
+  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-69527731-1');
+  </script>
+ <div class="responsivetext">
+        <h3>Fidget Spinner v1.0</h3>
+    </div> 
+<div class="maindiv mobilehide"><img id="fidget" src="ironman.png" onmousedown="showLibraryInfo()" ontouchstart="showLibraryInfo()"></div>
+<button class="toggle">&#9870;</button>
+<div class="btns hide">
+    <h4>Super Hero</h4>
+        <button type="button" id="ironman" class="btn  animated-button victoria-one">Iron Man</button>
+        <button type="button" id="captain"class="btn animated-button victoria-one">Captain America</button>
+        <button type="button" id="batman" class="btn animated-button victoria-one">Batman</button>
+        <button type="button" id="superman" class="btn animated-button victoria-one">Superman</button>
+    <h4>Disney Princess</h4>    
+        <button type="button" id="barbie" class="btn animated-button victoria-one">Barbie</button>
+        <button type="button" id="elsa" class="btn animated-button victoria-one">Elsa</button>
+        <button type="button" id="anna" class="btn animated-button victoria-one">Anna</button>
+        <a href="http://farrukkh.com/fidget/privacypolicy.html" class="btnlink" target="_blank">Privacy Policy</a>
+        <a href="http://farrukkh.com/fidget/terms.html" class="btnlink" target="_blank">Terms of Services</a>
+
+
+</div>
+
+<div style="margin-top:40px;margin-bottom: 40px;display: block;width:100%;text-align: center;position: fixed;z-index: 999999999999999999999999;bottom: 0;width: 100%;height: 200px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7813774828248719"
+     crossorigin="anonymous"></script>
+<!-- Horizontal_ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7813774828248719"
+     data-ad-slot="7074896502"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/propeller.min.js"></script>
+<script src="lib/jquery.ui.touch-punch.min.js"></script>
+<script>
+    new Propeller(document.getElementById('fidget'), {
+        inertia: 0.99,
+        onDragStop: function() {
+            console.log('stop');
+        },
+        onDragStart: function () {
+            console.log('start');
+        }
+    });
+
+    function showLibraryInfo() {
+        if (window.libInfoShown !== true) {
+            var windStuff = document.getElementsByClassName('wind');
+            var libStuff = document.getElementsByClassName('propeller');
+            for (var i = 0; i < windStuff.length; i++) {
+                var obj = windStuff[i];
+                obj.style.display = 'none';
+            }
+            for (var i = 0; i < libStuff.length; i++) {
+                var obj = libStuff[i];
+                obj.style.display = 'inline-block';
+            }
+            window.libInfoShown = true;
+        }
+    }
+</script>
+
+<script>
+var pic = document.getElementById('fidget');
+
+function ironman() {
+  pic.src = "ironman.png";
+}
+function captain() {
+  pic.src = "captain.png";
+}
+function batman() {
+  pic.src = "batman.png";
+}
+function superman() {
+  pic.src = "superman.png";
+}
+function hulk() {
+  pic.src = "hulk.png";
+}
+function barbie() {
+    pic.src = "barbie.png";
+}
+  function elsa() {
+  pic.src = "elsa.png";
+}
+function anna() {
+  pic.src = "anna.png";
+}
+  
+document.getElementById('ironman').addEventListener('click', ironman);
+document.getElementById('captain').addEventListener('click', captain);
+
+document.getElementById('batman').addEventListener('click', batman);
+document.getElementById('superman').addEventListener('click', superman);
+
+document.getElementById('barbie').addEventListener('click', barbie);
+
+document.getElementById('elsa').addEventListener('click', elsa);
+document.getElementById('anna').addEventListener('click', anna);
+    </script>
+</body>
+<script>
+
+    $(".toggle").click(function(){
+       $(".btns.hide").toggleClass("show");
+    });
+    $(".btns.hide .btn").click(function(){
+       $(".btns.hide").toggleClass("show");
+    });
+    
+
+                
+</script>
+</html>

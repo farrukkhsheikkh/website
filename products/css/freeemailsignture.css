@@ -1,0 +1,183 @@
+
+.inputcolor {
+	width: 80px;
+	border: 0px !important;
+	padding: 5px;
+	text-align: center;
+}
+footer {
+	font-size: 85%;
+	text-align: center;
+	background-color: #f7f7f7;
+}
+footer ul {
+	list-style-type: none;
+	text-align: left;
+}
+#create {
+	padding: 30px 0 100px;
+}
+.slide {
+	padding: 6rem 2rem;
+	background: url(../img/slide.jpg) center center;
+	background-size: cover;
+}
+.slide h1 {
+	color: #FFFFFF;
+	text-shadow: 0 5px 50px #333333;
+}
+.btn {
+	border-radius: 0!important;
+}
+h2 {
+	color: #007bff;
+	font-weight: 100;
+	font-size: 28px;
+	margin: 0 0 60px;
+}
+label b {
+	font-weight: 100;
+	font-size: 22px
+}
+label {
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase
+}
+.single-layout {
+	cursor: default
+}
+#copybtntable {
+	margin-top: 30px;
+}
+#copybtntable select {
+	width: 35%
+}
+.navbar-brand {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0
+}
+.navbar-brand em {
+	font-size: 10px;
+	font-style: normal;
+	clear: both;
+	display: block
+}
+.Q{
+    color: #007bff;
+    margin: 10px 0;
+    font-weight: bold;
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.A{
+    color: #333333;
+    margin: 10px 0;
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.A ol{
+	margin:10px 0;
+}
+#copybtntable .btn{ margin-bottom: 10px;}
+.modal-dialog {
+	width: 80%;
+    max-width: 80%;
+}
+#imageoutput canvas, #imageoutput img{ width: 100%;max-width: 100%!important}
+.bg-banner1{
+	background: linear-gradient(105deg, #800080, #008080);
+	color:#FFFFFF
+}
+.modal-body{
+	z-index: 999999999999999999999999999999999999999999
+}
+.sticky{ padding:20px; background: #FFFFFF;
+}
+.bd-footer-links li{
+	display: inline-block;
+	margin: 5px 10px;
+}
+.bd-footer-links{
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+.custom-column {
+	padding: 15px;
+	margin:0; 
+}
+.custom-column ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.custom-column ul li{
+	float: left;
+	width: 100%;
+	margin: 2px 0 0px;
+	
+}
+.custom-column ul li:hover, .custom-column ul li:focus{
+	cursor: move;
+}
+@media (max-width:1024px){
+#sticker.sticky_is_stuck{
+	position: static!important;
+
+}
+}
+@media (max-width:968px){
+.modal-dialog {
+		max-width: 100%!important;
+    width: 100%!important;
+}
+#imageoutput canvas, #imageoutput img{ width: 100%;max-width: 100%!important}
+	.is-sticky{ 
+		height: inherit!important
+	}
+.display-4 {
+		font-size: 2.5rem;
+	}
+.slide h1 {
+		font-size: 2rem;
+		display: inline-block;
+	}
+	.slide {
+		padding: 2rem 0rem;
+		margin-bottom: 0;
+	}
+	.slide	.col-lg-5, .slide	.col-lg-7{
+		display: inline-block;
+	}	
+#create {
+		padding: 15px!important;
+	}
+h2 {
+		margin: 0 0 20px;
+	}
+#sticker{
+	position: static!important; 
+}
+#copybtntable select {
+    width: 65%;
+}
+footer {
+    padding-bottom: 50px;
+}
+.featurecolor .col-md-3{
+	margin-bottom: 20px;
+}
+.featurecolor br{ 
+	display: none;
+}
+.featurecolor label{
+	min-width: 	25%;
+}
+.featurecolor input{
+	min-width: 	70%;
+}
+
