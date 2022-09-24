@@ -1,0 +1,269 @@
+body{
+    margin: 0 auto;
+    padding:0;
+    background:#03A9F4;
+    position: fixed
+}
+.demo-card-event{
+    background: #455A64;
+    color:#FFFFFF
+}
+.demo-card-wide.mdl-card {
+  width: 90%;
+  margin: 5% auto 0;
+  box-shadow: 0px 13px 0px 0px #EEE;
+  position: relative;
+  height: 80vh;
+}
+.mdl-card__supporting-text{
+    padding: 0;
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+}
+.todoapp{    
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+input[type=text]{
+    border-top:0px solid #DDDDDD;
+    border-bottom:0px solid #DDDDDD;
+    border-left:0px;
+    border-right:0px;
+    padding:10px 5px;
+    box-shadow:none;
+    font-size: 32px;
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+    outline: 0!important;
+    text-transform: capitalize
+}
+button{
+    border: 0;
+    background: none;
+}
+button:hover{
+cursor: pointer;
+opacity: .8;
+}
+p{
+    margin-bottom: 0
+}
+#todo{
+    display: block;
+    
+}
+.savetitle{
+    font-size: 11px;
+   padding: 0 15px;
+   margin: 0;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+#todo label:first-child{
+    display: block;
+    padding: 20px 10px;
+    background-color: #CFD8DC!important;
+    background-image: url(http://farrukkh.com/fa-logo.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: right center;
+    background-size: 57px 78px;
+}
+#todo label{
+    display: block;
+    padding: 20px 10px;
+    background: #B0BEC5;
+}
+#todo label:nth-child(2){
+    background-color: #B0BEC5;
+}
+#todo label:nth-child(3){
+    background-color: #90A4AE;
+}
+#todo label:nth-child(4){
+    background: #78909C;
+    color:#FFFFFF;
+}
+#todo label:nth-child(5){
+    background: #607D8B;
+    color:#FFFFFF;
+}
+#todo label:nth-child(6){
+    background: #546E7A;
+    color:#FFFFFF;
+}
+#todo label:nth-child(7){
+    background: #455A64;
+    color:#FFFFFF;
+}
+#todo label:nth-child(8){
+    background: #37474F;
+    color:#FFFFFF;
+}
+#todo label:nth-child(9){
+    background: #CFD8DC;
+}
+#todo label:nth-child(10){
+    background: #B0BEC5;
+}
+#todo label:nth-child(11){
+    background: #90A4AE;
+}
+#todo label:nth-child(12){
+    background: #78909C;
+    color:#FFFFFF;
+}
+color:#FFFFFF;
+#todo label:nth-child(13){
+    background: #607D8B;
+    color:#FFFFFF;
+}
+#todo label:nth-child(14){
+    background: #546E7A;
+    color:#FFFFFF;
+}
+#todo label:nth-child(15){
+    background: #455A64;
+    color:#FFFFFF;
+}
+
+
+#todo p{
+    font-weight:normal;
+    text-transform: capitalize;
+    font-size: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+#todo .selected p{
+    font-weight: bold
+}
+
+.mdl-card__title2{
+    padding:0 10px;
+}
+.d-block{ 
+    clear: both;
+    display: block;
+    width:100%
+}
+.topheading{
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+.fl-right{
+    float: right;
+}
+
+.btn-add{
+    color: #673ab7;
+}
+.btn-update{
+    color: #4285f4;
+}
+.btn-remove{
+    color: #ff4081;
+}
+.btn-save{
+    color:#5fba7d
+}
+#alert{
+    color:red;
+    margin: 20px 10px;
+}
+
+
+
+
+
+/* INPUT */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    width: 40px;
+    height: 16px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    background: #ebebeb;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: background 0.3s;
+    box-sizing: border-box;
+  }
+  
+  input[type="checkbox"]:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    transition: left 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  input[type="checkbox"]:checked {
+    background: #a6c7ff;
+    border-color: #8daee5;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    left: 23px;
+    border-color: #8daee5;
+  }
+  
+  input[type="checkbox"]:hover:not(:checked):not(:disabled):after,
+  input[type="checkbox"]:focus:not(:checked):not(:disabled):after {
+    left: 0px;
+  }
+  
+  input[type="checkbox"]:hover:checked:not(:disabled):after,
+  input[type="checkbox"]:focus:checked:not(:disabled):after {
+    left: 22px;
+  }
+  
+  input[type="checkbox"]:disabled {
+    opacity: 0.5;
+  }
+  ::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #666666;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #DDDDDD;
+  }
+  footer{
+    position: fixed;
+    bottom:10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color:#FFFFFF
+  }
+  footer a{
+    color:#FFFFFF;
+    text-decoration: none;
+  }
+  canvas input{display: none!important}
+  @media(max-width:768px){
+    #todo p{
+        font-size: 24px
+    }
+  }
