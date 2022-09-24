@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!--  Include jQuery core into head section -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!--  AJAX-ZOOM javascript && CSS -->
+<link href="http://www.ajax-zoom.com/axZm/axZm.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.ajax-zoom.com/axZm/jquery.axZm.js"></script>
+<style type="text/css">
+	html {font-family: Tahoma, Arial; font-size: 10pt;}
+	body {margin: 0; padding: 0;}
+	html {margin: 0; padding: 0; border: 0;}
+	a {color: blue; outline: 0; outline-style: none; text-decoration: none;} a:visited {color: blue;} a:hover {color: green;}
+	h2 {padding:0px; margin: 35px 0px 15px 0px; font-size: 22px;}
+	h3 {font-family: Arial; color: #1A4A7A; font-size: 18px; padding: 20px 0px 3px 0px; margin: 0;}
+	p {text-align: justify; text-justify: newspaper;}
+</style>
+
+
+</head>
+
+<body>
+<!--  Placeholder for AJAX-ZOOM player -->
+<div class="aze_example_navi_container" style="box-sizing: content-box !important; background-color: #808080;">
+	<div style="float: left; box-sizing: content-box !important; padding: 5px 0px 0px 5px"><a href="example15.php">
+	<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/previous-icon-48.png" border="0" alt="example15.php" title="example15.php">
+	</a><a href="http://www.ajax-zoom.com">
+		<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/home-icon.png" border="0" style="margin-left: 25px" alt="HOME" title="HOME">
+		</a><a href="http://www.ajax-zoom.com/examples/">
+		<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/overview_48x48.png" border="0" style="margin-left: 5px" alt="Examples overview" title="Examples overview">
+		</a><a href="http://www.ajax-zoom.com/index.php?cid=download">
+		<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/download_48x48.png" border="0" style="margin-left:5px" alt="Download" title="Download">
+		</a><a href="http://www.ajax-zoom.com/index.php?cid=contact">
+	<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/support_48x48.png" border="0" title="Ask a question" alt="Ask a question" style="margin-left: 5px">
+	</a></div>
+	<div style="float: right; box-sizing: content-box !important; padding: 5px 5px 0px 0px"><a href="example15_fullscreen.php">
+	<img class="aze_example_navi_buttons" src="http://www.ajax-zoom.com/axZm/icons/next-icon-48.png" border="0" alt="example15_fullscreen.php" title="example15_fullscreen.php">
+	</a></div>
+</div>
+
+
+	<script type="text/javascript">
+
+	// Create empty jQuery object which is interpreted in axZm/jquery.axZm.loader.js
+	var ajaxZoom = {}; 
+	
+	// Define callbacks, for complete list check the docs
+	// http://www.ajax-zoom.com/index.php?cid=docs#API_CALLBACKS
+	ajaxZoom.opt = {
+		onBeforeStart: function(){
+			// Some of the options can be set directly as js var in this callback
+			jQuery.axZm.spinReverse = true;
+			// jQuery.axZm.spinReverseZ = true;
+			
+			// Optionally perform some DOM manipulations
+			jQuery('.axZm_zoomContainer').css({backgroundColor: '#FFFFFF'});
+		}
+	};
+	
+	// Define the path to the axZm folder, adjust the path if needed!
+	ajaxZoom.path = "http://farrukkh.com/sheet2"; 
+	
+	// Define your custom parameter query string
+	// example=17 has many presets for 360 images*
+	// 3dDir - best of all absolute path to the folder with 360/3D images
+	
+	
+	// *By defining the query string parameter in ajaxZoom.parameter example=17 
+	// some default settings from /axZm/zoomConfig.inc.php are overridden in 
+	// /axZm/zoomConfigCustom.inc.php after elseif ($_GET['example'] == 17){. 
+	// So if changes in /axZm/zoomConfig.inc.php have no effect - 
+	// look for the same options /axZm/zoomConfigCustom.inc.php; 
+	ajaxZoom.parameter = "&3dDir="; 
+	
+	// The ID of the element (placeholder) where AJAX-ZOOM has to be inserted into
+	ajaxZoom.divID = "AZplayerParentContainer";
+	
+	 
+	
+	// Instead of using the loader file jquery.axZm.loader.js (see below)
+	// you can use http://www.ajax-zoom.com/index.php?cid=docs#api_load
+	// Following files need to be loaded before jQuery.fn.axZm.load is triggered:
+	// 1. jQuery core (e.g. http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js), 
+	// 2. /axZm/jquery.axZm.js (AJAX-ZOOM core file) 
+	// 3. /axZm/axZm.css (AJAX-ZOOM css)
+	// Do not use jQuery.fn.axZm.load and /axZm/jquery.axZm.loader.js together!
+
+	jQuery(document).ready(function(){
+		jQuery.fn.axZm.load({
+			opt: ajaxZoom.opt,
+			path: ajaxZoom.path,
+			parameter: ajaxZoom.parameter,
+			divID: ajaxZoom.divID
+		});			
+	});
+ 
+	</script>
+
+
+</body>
+
+<script>
+
+</html>
